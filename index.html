@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Список елементів</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="navigation">
+  <div class="logo-container">
+    <img src="logo1.jpg" alt="Логотип" class="logo">
+  </div>
+  <div class="nav-items">
+    <button onclick="applyFilter('all')">Всі</button>
+    <button onclick="applyFilter('category1')">Категорія 1</button>
+    <button onclick="applyFilter('category2')">Категорія 2</button>
+    <button onclick="window.location.href='news.html'">Новини</button>
+    <button onclick="window.location.href='graph.html'">Графік </button>
+    <div class="cart-icon-container">
+      <img src="shopping cart.png" alt="Кошик" class="cart-icon" onclick="toggleCart()">
+  </div>
+  </div>  
+  </div>
+</div>
+
+<div id="cartModal" class="modal cart-modal">
+  <div id="cartItemsContainer"></div>
+  <button onclick="closeModal('cartModal')">Закрити кошик</button>
+</div> 
+
+<div id="cardsContainer"></div>
+
+<div id="subscriptionModal" class="modal">
+  <p>Підпишіться на наші оновлення!</p>
+  <button onclick="subscribe()">Підписатися</button>
+  <button onclick="closeModal('subscriptionModal')">Відхилити</button>
+</div>
+
+<div id="advertisementModal" class="modal">
+  <p>Реклама</p>
+  <button id="closeAdBtn" onclick="closeModal('advertisementModal')" disabled>Закрити</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

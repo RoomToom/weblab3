@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+   
+  .logo {
+    max-height: 50px; /* Або будь-який інший розмір відповідно до вашого дизайну */
+    border-radius: 10px; /* Закруглення кутів */
+  }
+  
+  .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .nav-items button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .nav-items button:hover {
+    background-color: #ddd;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  }
+  
+  /* Стилі для карток та модальних вікон... */
+  
+body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #cardsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 12000px; /* Задаємо максимальну ширину контейнера для керування розташуванням карток */
+    max-height: 12000px;
+  }
+  
+  .card {
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: calc(33% - 20px); /* Розрахунок ширини картки, щоб врахувати відступи і зробити так, щоб 3 картки поміщалися в ряд */
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%; /* Забезпечує, що зображення будуть розтягнуті на всю ширину картки */
+    height: auto; /* Зберігає пропорції зображення */
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .modal p {
+    color: white;
+    margin: 15px;
+  }
+  
+  .cart-icon-container {
+    position: fixed;
+    top: 10px;
+    right: -60px;
+    cursor: pointer;
+    width: auto; /* автоматично визначати ширину, засновану на висоті */
+    height: 50px; /* встановлює висоту таку ж, як у логотипу */
+}
+
+.cart-icon {
+    height: 100%;
+    width: auto; 
+    border-radius: 10px; 
+}
+
+.price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.quantity, .total-price {
+  display: block; /* або flex, залежно від вашого дизайну */
+  margin: 5px 0;
+}
+
+.total {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.news-container {
+  width: 300px; /* або будь-яка ширина, яку ви вважаєте за потрібну */
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.news-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#latest-news {
+  list-style-type: none;
+  padding: 0;
+}
+
+#latest-news li {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#latest-news li:last-child {
+  border-bottom: none;
+}
+
+#latest-news li:hover {
+  background-color: #f0f0f0;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(0, 0, 0); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}

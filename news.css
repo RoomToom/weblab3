@@ -1,0 +1,88 @@
+/* Стиль для модального вікна */
+.modal {
+    display: none; /* Приховане за замовчуванням */
+    position: fixed;
+    z-index: 1; /* Знаходиться над іншими елементами */
+    left: 0;
+    top: 0;
+    width: 100%; /* Повна ширина */
+    height: 100%; /* Повна висота */
+    overflow: auto; /* У разі переповнення з'являється прокрутка */
+    background-color: rgb(0,0,0); /* Затемнення */
+    background-color: rgba(0,0,0,0.4); /* Затемнення з прозорістю */
+}
+
+/* Стиль для вмісту модального вікна */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% від верху і по центру */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* 80% ширини */
+}
+
+/* Стиль для кнопки закриття */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.news-container {
+    width: 300px; /* або будь-яка ширина, яку ви вважаєте за потрібну */
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.news-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#latest-news {
+    list-style-type: none;
+    padding: 0;
+}
+
+#latest-news li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#latest-news li:last-child {
+    border-bottom: none;
+}
+
+#latest-news li:hover {
+    background-color: #f0f0f0;
+}
+
+.news-item {
+    margin-bottom: 10px;
+}
+
+.news-title {
+    cursor: pointer;
+    color: #000000;
+}
+
+.news-title:hover {
+    text-decoration: underline;
+}
+
+.news-info {
+    background-color: #f0f0f0;
+    border-left: 3px solid #000000;
+    padding: 5px;
+    margin-top: 5px;
+}
